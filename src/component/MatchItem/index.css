@@ -1,0 +1,45 @@
+.match-item-container {
+  display: flex;
+}
+
+.image-button {
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.image-button:hover {
+  width: 70px;
+  height: 70px;
+}
+@media screen and (min-width: 768px) {
+  .image-button {
+    width: 85px;
+    height: 95px;
+  }
+  .image-button:hover {
+    width: 95px;
+    height: 105px;
+  }
+}
+.match-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .match-image {
+    width: 90px;
+    height: 90px;
+  }
+}
