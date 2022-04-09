@@ -263,6 +263,10 @@ class App extends Component {
     this.timerId = setInterval(this.statusChange, 1000)
   }
 
+  componentWillUnmount() {
+    clearInterval(this.timerID)
+  }
+
   statusChange = () => {
     const {time} = this.state
     if (time !== 0) {
@@ -292,7 +296,7 @@ class App extends Component {
         largeImgUrl: newImgUrl,
       }))
     } else {
-      clearInterval(this.TimerId)
+      clearInterval(this.timerID)
       this.setState({isTimeOut: true})
     }
   }
